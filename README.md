@@ -35,7 +35,7 @@ built as part of ALY6070 at Northeastern University Vancouver.
 ---
 
 ## Project Structure
-<img width="685" height="518" alt="image" src="https://github.com/user-attachments/assets/f1e90aa4-112a-41a2-89ee-d46f25c94992" />
+<img width="602" height="608" alt="image" src="https://github.com/user-attachments/assets/771ced92-b83a-4ab5-9846-b356eca3f323" />
 
 ---
 
@@ -139,7 +139,7 @@ An interactive Shiny dashboard with 4 tabs:
 ---
 
 ## Pipeline Architecture
-<img width="741" height="509" alt="image" src="https://github.com/user-attachments/assets/1ef1c9ec-dbc5-49de-821b-dff038571dc2" />
+<img width="481" height="523" alt="image" src="https://github.com/user-attachments/assets/d4df0e86-9628-4a3c-a77b-1cdb10b265d6" />
 
 ---
 
@@ -161,6 +161,3 @@ Northeastern University Vancouver
   [carbonpricingdashboard.worldbank.org](https://carbonpricingdashboard.worldbank.org)
 
 ---
-
-*ALY6070 — Communicating and Visualizing Data Analysis |
-Northeastern University Vancouver*
