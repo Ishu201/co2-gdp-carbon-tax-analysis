@@ -35,7 +35,7 @@ built as part of ALY6070 at Northeastern University Vancouver.
 ---
 
 ## Project Structure
-<img width="602" height="608" alt="image" src="https://github.com/user-attachments/assets/771ced92-b83a-4ab5-9846-b356eca3f323" />
+<img width="402" height="408" alt="image" src="https://github.com/user-attachments/assets/771ced92-b83a-4ab5-9846-b356eca3f323" />
 
 ---
 
@@ -139,7 +139,7 @@ An interactive Shiny dashboard with 4 tabs:
 ---
 
 ## Pipeline Architecture
-<img width="481" height="523" alt="image" src="https://github.com/user-attachments/assets/d4df0e86-9628-4a3c-a77b-1cdb10b265d6" />
+<img width="281" height="323" alt="image" src="https://github.com/user-attachments/assets/d4df0e86-9628-4a3c-a77b-1cdb10b265d6" />
 
 ---
 
