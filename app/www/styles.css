@@ -289,3 +289,27 @@ table.dataTable tbody tr:nth-child(even) {
 ::-webkit-scrollbar-thumb:hover {
     background: #47B9C6;
 }
+
+
+
+/* ── Fix navbar position ─────────────────────────────────────── */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* ── Fix sidebar position ────────────────────────────────────── */
+.well {
+    position: sticky;
+    top: 70px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+/* ── Push content down so navbar doesn't cover it ───────────── */
+.tab-content {
+    padding-top: 70px !important;
+}
