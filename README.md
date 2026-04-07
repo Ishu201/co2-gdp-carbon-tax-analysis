@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
 
 A full data analytics case study investigating whether GDP per capita
-predicts CO₂ emissions and whether carbon tax reduces emissions —
+predicts CO₂ emissions and whether carbon tax reduces emissions :
 built as part of ALY6070 at Northeastern University Vancouver.
 
 ---
@@ -22,49 +22,20 @@ built as part of ALY6070 at Northeastern University Vancouver.
 
 | Finding | Result |
 |---|---|
-| GDP vs CO₂ correlation | r = 0.824, p < 0.001 — strong positive |
-| Carbon tax without GDP control | +3.59 tonnes — misleading positive |
-| Carbon tax with GDP control | −3.24 tonnes — true negative effect |
+| GDP vs CO₂ correlation | r = 0.824, p < 0.001 - strong positive |
+| Carbon tax without GDP control | +3.59 tonnes - misleading positive |
+| Carbon tax with GDP control | -3.24 tonnes - true negative effect |
 | Model R² (GDP + Carbon tax) | 70.8% of CO₂ variation explained |
 | Confounding variable | GDP confirmed as confounder |
 
-> Carbon tax **does** reduce emissions — but only after controlling
+> Carbon tax **does** reduce emissions - but only after controlling
 > for GDP. Without the control, wealthier countries that adopt carbon
 > tax appear to emit more, simply because wealth drives emissions.
 
 ---
 
 ## Project Structure
-co2-gdp-carbon-tax-analysis/
-│
-├── app/                          # Shiny dashboard
-│   ├── global.R                  # Data loading, palette, helpers
-│   ├── ui.R                      # Dashboard layout
-│   ├── server.R                  # Reactive logic and plots
-│   └── www/
-│       └── styles.css            # Custom CSS styling
-│
-├── R/                            # Reusable functions
-│   ├── cleaning_functions.R      # Data cleaning functions
-│   ├── analysis_functions.R      # Correlation and regression
-│   └── plot_functions.R          # ggplot2 plot functions
-│
-├── scripts/                      # Pipeline scripts
-│   ├── 01_load_clean.R           # Load raw data and clean
-│   ├── 02_eda.R                  # Generate EDA plots
-│   └── 03_analysis.R             # Run analysis and save workspace
-│
-├── plots/                        # Saved visualisations (9 plots)
-│
-├── data/
-│   └── raw/
-│       └── README.md             # Data download instructions
-│
-├── run_all.R                     # Master pipeline
-├── initial_script.R              # Original exploratory script
-├── co2_gdp_carbon_tax_analysis.Rmd   # Full R Markdown report
-├── co2_gdp_carbon_tax_analysis.html  # Knitted HTML report
-└── README.md
+<img width="685" height="518" alt="image" src="https://github.com/user-attachments/assets/f1e90aa4-112a-41a2-89ee-d46f25c94992" />
 
 ---
 
@@ -130,8 +101,8 @@ An interactive Shiny dashboard with 4 tabs:
 | Tab | Content |
 |---|---|
 | Overview | CO₂ distribution, top 20 emitters, world map, carbon tax adoption |
-| Q1 — GDP & CO₂ | GDP world map, scatter plots, trend by income group |
-| Q2 — Carbon Tax | CO₂ by country, trends, GDP confounding analysis |
+| Q1 : GDP & CO₂ | GDP world map, scatter plots, trend by income group |
+| Q2 : Carbon Tax | CO₂ by country, trends, GDP confounding analysis |
 | Data Explorer | Correlation heatmap, filterable data tables |
 
 **Filters:** Year range, carbon tax status, GDP level, top 20 only
@@ -147,10 +118,10 @@ An interactive Shiny dashboard with 4 tabs:
 | `03_carbon_tax_adoption.png` | Carbon tax adoption donut chart |
 | `04_gdp_vs_co2.png` | GDP vs CO₂ scatter with regression |
 | `05_co2_by_country.png` | CO₂ per capita coloured by tax status |
-| `06_trend_tax_countries.png` | CO₂ trend — carbon tax countries |
-| `07_co2_trend_no_tax.png` | CO₂ trend — no tax countries |
+| `06_trend_tax_countries.png` | CO₂ trend - carbon tax countries |
+| `07_co2_trend_no_tax.png` | CO₂ trend - no tax countries |
 | `08_gdp_co2_tax_color.png` | GDP vs CO₂ coloured by tax |
-| `09_actual_vs_fitted.png` | Actual vs fitted — Model 3 |
+| `09_actual_vs_fitted.png` | Actual vs fitted - Model 3 |
 
 ---
 
@@ -168,30 +139,21 @@ An interactive Shiny dashboard with 4 tabs:
 ---
 
 ## Pipeline Architecture
-data/raw/          →    scripts/01_load_clean.R
-↓
-data/processed/co2_tax_gdp.rds
-↓
-scripts/02_eda.R → plots/
-↓
-scripts/03_analysis.R → data/processed/analysis_workspace.RData
-↓
-app/ (Shiny dashboard)
-co2_gdp_carbon_tax_analysis.Rmd
+<img width="741" height="509" alt="image" src="https://github.com/user-attachments/assets/1ef1c9ec-dbc5-49de-821b-dff038571dc2" />
 
 ---
 
 ## Author
 
-**Isuri Nawodya**
-Master of Professional Studies in Analytics
+**Isuri Nawodya** |
+Master of Professional Studies in Analytics |
 Northeastern University Vancouver
 
 ---
 
 ## Data Sources
 
-- Hannah Ritchie, Max Roser and Pablo Rosado (2020) — CO₂ and
+- Hannah Ritchie, Max Roser and Pablo Rosado (2020) - CO₂ and
   Greenhouse Gas Emissions. *Our World in Data*.
   [ourworldindata.org](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 
