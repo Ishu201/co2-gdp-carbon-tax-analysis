@@ -1,0 +1,291 @@
+/* ============================================================
+   Global CO₂ Analysis — Dashboard Styles
+   Palette: #21497E #2A7FAA #47B9C6 #ACE9DF #D5F8E2
+   ============================================================ */
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+.navbar {
+    background-color: #21497E !important;
+    border: none;
+    padding: 0 20px;
+    min-height: 52px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px 15px 0;
+}
+
+/* ── Tab buttons ─────────────────────────────────────────────── */
+.navbar-nav {
+    float: right !important;
+    margin-right: 10px;
+}
+
+.navbar-nav > li > a {
+    color: rgba(255,255,255,0.7) !important;
+    font-size: 13px;
+    padding: 14px 20px;
+    border-radius: 0;
+    transition: all 0.2s;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    margin: 0 2px;
+}
+
+.navbar-nav > li > a:hover {
+    color: white !important;
+    background-color: transparent !important;
+    border-bottom: 3px solid #ACE9DF;
+}
+
+.navbar-nav > li.active > a {
+    color: white !important;
+    background-color: transparent !important;
+    border-bottom: 3px solid #47B9C6;
+}
+
+/* ── Navbar brand stays left ─────────────────────────────────── */
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    float: left !important;
+    padding: 15px 20px 15px 0;
+}
+
+/* ── Page background ─────────────────────────────────────────── */
+body {
+    background-color: #f4f6f9;
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, sans-serif;
+}
+
+.tab-content {
+    padding: 10px 0;
+}
+
+/* ── Filter sidebar ──────────────────────────────────────────── */
+.well {
+    background: #2A7FAA !important;
+    border: 1px solid #21497E !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12) !important;
+}
+
+.well h5 {
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.well label {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.well .form-control {
+    font-size: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.well .form-control option {
+    color: black;
+    background: white;
+}
+
+.well .form-control:focus {
+    border-color: #ACE9DF;
+    box-shadow: 0 0 0 2px rgba(172,233,223,0.3);
+    background: rgba(255,255,255,0.2);
+}
+
+.well hr {
+    border-color: rgba(255,255,255,0.2);
+    margin: 12px 0;
+}
+
+.well input[type='checkbox'] {
+    accent-color: #ACE9DF;
+}
+
+.well .checkbox label {
+    color: white;
+    font-size: 12px;
+}
+
+.well .irs--shiny .irs-bar {
+    background: #ACE9DF;
+    border-color: #ACE9DF;
+}
+
+.well .irs--shiny .irs-handle {
+    background: white;
+    border-color: #ACE9DF;
+}
+
+.well .irs--shiny .irs-from,
+.well .irs--shiny .irs-to,
+.well .irs--shiny .irs-single {
+    background: #21497E;
+    font-size: 10px;
+}
+
+.well .irs--shiny .irs-min,
+.well .irs--shiny .irs-max {
+    color: rgba(255,255,255,0.6);
+    font-size: 10px;
+}
+
+/* ── Data source text in sidebar ─────────────────────────────── */
+.well .source-text {
+    font-size: 11px;
+    color: white !important;
+    line-height: 1.6;
+}
+
+/* ── Chart cards ─────────────────────────────────────────────── */
+.chart-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+}
+
+.chart-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #2A7FAA;
+    margin: -16px -16px 12px -16px;
+    padding: 10px 16px;
+    border-radius: 8px 8px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ── Value cards ─────────────────────────────────────────────── */
+.value-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.value-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* ── Two column layouts ──────────────────────────────────────── */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.two-col-wide {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+/* ── Interpretation boxes ────────────────────────────────────── */
+.finding-box {
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    background: #f8fbff;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.finding-box strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.finding-box p {
+    color: #444;
+    margin: 0;
+}
+
+/* ── DT tables ───────────────────────────────────────────────── */
+.dataTables_wrapper {
+    font-size: 13px;
+}
+
+.dataTables_filter input {
+    border: 1px solid #ACE9DF;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.dataTables_filter input:focus {
+    outline: none;
+    border-color: #47B9C6;
+    box-shadow: 0 0 0 2px rgba(71,185,198,0.2);
+}
+
+table.dataTable thead th {
+    background-color: #21497E;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: none !important;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #D5F8E2 !important;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #f8fbff;
+}
+
+/* ── Plotly modebar ──────────────────────────────────────────── */
+.plotly .modebar {
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}
+
+.plotly .modebar:hover {
+    opacity: 1;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────── */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f6f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ACE9DF;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #47B9C6;
+}
